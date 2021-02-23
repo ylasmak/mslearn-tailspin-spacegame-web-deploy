@@ -87,7 +87,7 @@ stages:
             inputs:
               azureSubscription: 'deploy-app-sev-cnx'
               appType: 'webAppLinux'
-              appName: '$(WebAppNameDev)'
+              appName: '$(WebAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
 - stage: 'Test'
